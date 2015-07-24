@@ -7,6 +7,7 @@ For Mac + zsh users
 When you open your .tex file as
 
 > open hoge.tex
+
 > vim hoge.tex
 
 you should type two commands, but with this script 

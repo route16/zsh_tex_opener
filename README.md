@@ -11,7 +11,7 @@ When you open your .tex file as
 > vim hoge.tex
 
 you should type two commands, but with this script 
-you can do it by only one commands:
+you can do it by only one command:
 
 > open hoge.tex
 

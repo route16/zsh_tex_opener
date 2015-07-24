@@ -8,7 +8,7 @@ fromarg=${(z)2}
 arg_num=${#fromarg[@]}
 if [ ${arg_num} -eq 2 ]; then
   if [ $fromarg[1] = "open" ]; then
-    if [ `basename $fromarg[2] .tex` != `basename $fromarg[2]` ]; then
+    if [ ${(l:4:)fromarg[2]} = ".tex" ]; then
       r_open_with_vim_flag=1
     fi
   fi

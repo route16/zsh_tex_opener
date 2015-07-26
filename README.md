@@ -24,3 +24,10 @@ Write
 
 in your .zshrc.
 
+### Options
+
+If you set 
+
+> zsh_tex_opener_enabled = 0
+
+you can disable this script.

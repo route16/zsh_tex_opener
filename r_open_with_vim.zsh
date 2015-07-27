@@ -21,6 +21,9 @@ if [ ${arg_num} -eq 2 ]; then
       r_open_with_vim_flag=3
     fi
   fi
+  if [ `ps | grep vim | grep -e "${fromarg[2]}" | grep "\.tex" | wc -l` -ne 0 ]; then
+    r_open_with_vim_flag=0
+  fi
 fi
 if [ ${r_open_with_vim_flag} -eq 1 ]; then
   vim ${fromarg[2]} & 
